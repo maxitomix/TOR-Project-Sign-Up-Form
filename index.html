@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="Norse-Bold.otf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -24,14 +25,45 @@
     <div class="section3">
         <h2>Lets do This!</h2>
         <div class="form">
-        <form action="">
-            <input type="text"><input type="text">
-            <br>
-            <input type="text"><input type="text">
-            <br>
-            <input type="text"><input type="text">
-
-        </form>
+            <form action="">
+                <div class="input">
+                    <label id="nameIcon" for="fname">  
+                        <i class="fas fa-user"></i> First Name
+                        </label>
+                        <br>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required/>
+                </div>
+                <div class="input">
+                    <label for="lname"> Last Name</label>
+                    <br>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required/>
+                </div>
+                <div class="input">
+                    <label id="icon" for="email">
+                        <i class="fas fa-envelope"></i> Email
+                    </label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email" required/>
+                </div>
+                <div class="input">
+                    <label id="icon" for="phone">
+                        <i class="fa-solid fa-phone-flip"></i> Phone
+                    </label>
+                    <br>
+                    <input type="tel" name="phone" id="phone" placeholder="555-222-11121" required/>
+                </div>
+                <div class="input">
+                    <label for="pass"><i class="fa-sharp fa-solid fa-key"></i> Password
+                    </label>
+                    <br>
+                    <input type="password" name="pass" id="pass" placeholder="Password" required/>
+                </div>
+                    <div class="input">
+                    <label for="pass2">Confirm Password</label>  
+                    <br>  
+                    <input type="password" name="pass2" id="pass2" placeholder="ConfirmPassword" required/>
+                </div>
+            </form>
         </div>
     </div>    
     <div class="section4">
